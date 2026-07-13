@@ -3,8 +3,77 @@
 
 Client: Unified Mentor / Toronto Government, Parks, Forestry & Recreation
 
+Live Demo: https://chandini-ferry-analytics.streamlit.app/
+
+## Dashboard Preview
+### Mission Control
+
+![Mission Control](screenshots/mission_control.png)
+
+The executive dashboard provides a real-time overview of ferry operations, including ticket sales, redemptions, net passenger movement, operational KPIs, and passenger flow trends.
+
 ---
 
+### Demand Trends
+
+| Hourly Demand | Weekly Demand |
+|---------------|---------------|
+| ![](screenshots/demand_hourly.png) | ![](screenshots/demand_weekly.png) |
+
+Analyze passenger demand across different hours of the day and days of the week to identify consistent travel patterns.
+
+---
+
+### Peak & Seasonal Analysis
+
+![Peak & Seasonal Analysis](screenshots/peak_seasonal.png)
+
+Visualize seasonal demand, identify high-traffic periods, and explore demand intensity using interactive heatmaps.
+
+---
+
+### Terminal Occupancy
+
+| Daily Occupancy | Peak Occupancy |
+|-----------------|----------------|
+| ![](screenshots/terminal_daily.png) | ![](screenshots/terminal_peak.png) |
+
+Estimate passenger occupancy, monitor daily movement, and identify days with the highest terminal utilization.
+
+---
+
+### Data Explorer
+
+![Data Explorer](screenshots/data_explorer.png)
+
+Interactively browse, filter, and export the processed ferry dataset at different aggregation levels.
+
+---
+## Overview
+
+The Real-Time Ferry Demand Analytics Dashboard is an interactive business intelligence application developed to analyze ferry ticket sales and passenger demand for the Jack Layton Ferry Terminal, Toronto Island Park.
+
+The project transforms raw ticket transaction data into meaningful operational insights through data preprocessing, exploratory data analysis, KPI generation, and an interactive Streamlit dashboard. It enables users to monitor passenger demand, identify peak travel periods, evaluate seasonal trends, and explore terminal occupancy using an intuitive interface.
+
+## Objectives
+1. Analyze historical ferry ticket sales data.
+2. Identify passenger demand patterns across different time periods.
+3. Monitor key operational performance indicators.
+4. Detect peak travel windows and seasonal variations.
+5. Support data-driven operational planning and resource allocation.
+
+## Key Features
+    Interactive KPI dashboard
+    Passenger demand trend analysis
+    Seasonal and weekday comparisons
+    Peak travel window identification
+    Terminal occupancy estimation
+    Rolling average analysis
+    Dynamic filtering by date, season, and day type
+    CSV export functionality
+    Interactive Plotly visualizations
+    Responsive Streamlit interface
+    
 ## Project Structure
 
 ```
@@ -37,6 +106,7 @@ ferry_project/
     │   └── methodology.py
     └── data/processed/                           # Copy of the notebook's exports
 ```
+### INSTALLATION
 
 ## 1. Run the Jupyter Notebook (preprocessing + EDA)
 
@@ -82,6 +152,25 @@ The app opens at `http://localhost:8501`.
 
 All pages share the same sidebar filters (date range, season, weekday/weekend, outlier
 inclusion) so every view stays in sync with the selected window.
+
+## Business Value
+
+This dashboard assists transportation authorities in:
+
+    Understanding passenger demand patterns
+    Identifying peak operating hours
+    Evaluating seasonal travel behavior
+    Improving ferry scheduling
+    Supporting staffing and operational planning
+    Monitoring terminal activity through interactive analytics
+
+Author
+
+Chandini Narayana
+
+Bachelor of Engineering in Computer Science (Artificial Intelligence & Machine Learning)
+
+GitHub: https://github.com/chandini-narayana
 
 
 
